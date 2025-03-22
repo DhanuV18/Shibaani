@@ -6,7 +6,7 @@ import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 
 import movie from '../../images/thumbnail/movie@2x.webp'
 import tesla from '../../images/thumbnail/tesla@2x.webp'
-import scooby from '../../images/thumbnail/scooby@2x.webp'
+import scooby from '../../images/thumbnail/scooby.webp'
 
 
 
