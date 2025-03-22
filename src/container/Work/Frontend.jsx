@@ -4,9 +4,11 @@ import { motion } from 'framer-motion';
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
 
 
-import movie from '../../images/thumbnail/movie.webp'
-import tesla from '../../images/thumbnail/tesla.webp'
-import scooby from '../../images/thumbnail/scooby.webp'
+import movie from '../../images/thumbnail/movie@2x.webp'
+import tesla from '../../images/thumbnail/tesla@2x.webp'
+import scooby from '../../images/thumbnail/scooby@2x.webp'
+
+
 
 function Frontend({ index, imgUrl, name, projectLink, codeLink, tools, title, description}) {
 
