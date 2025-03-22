@@ -8,8 +8,6 @@ import movie from '../../images/thumbnail/movie.webp'
 import tesla from '../../images/thumbnail/tesla.webp'
 import scooby from '../../images/thumbnail/scooby.webp'
 
-
-
 function Frontend({ index, imgUrl, name, projectLink, codeLink, tools, title, description}) {
 
 const scaleVariants = {
