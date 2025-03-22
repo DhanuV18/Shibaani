@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.work__container{
+  padding: 3.5rem 0;
+
+}
+
+.work{
+  background-image: url(../../images/background-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.app__works {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+.app__work-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 2rem 0;
+
+  .app__work-filter-item {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.5rem;
+
+    &:hover {
+      background-color: var(--secondary-color);
+      color: #fff;
+    }
+
+    @media screen and (min-width: 1024px) {
+      padding: 0.6rem 1.5rem;
+    }
+  }
+
+  .item-active {
+    background-color: var(--secondary-color);
+    color: #fff;
+  }
+}
+
+.app__work-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  .app__work-item {
+    width: 16rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    color: #000;
+    box-shadow: 0 0 50px 2px rgba(3, 57, 175, 0.5);
+
+    @media screen and (min-width: 766px) {
+      width: 28rem;
+        padding: 1.25rem;
+    }
+
+    @media screen and (min-width: 400px) {
+      width: 22rem;
+      padding: 1.25rem;
+    }
+
+    @media screen and (max-width: 399px) {
+      width: 18rem;
+      // padding: 1.25rem;
+    }
+  
+    @media screen and (max-width: 359px) {
+      width: 15rem;
+      // padding: 1.25rem;
+    }
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+      transform: scale(1.05);
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 22rem;
+        padding: 1.25rem;
+        border-radius: 0.75rem;
+    }
+
+    @media screen and (max-width: 100px) {
+      width: 100%;
+      // margin: 1rem;
+    }
+  }
+}
+
+
+.app__work-img {
+  width: 100%;
+  height: 20rem;
+  position: relative;
+
+
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 399px) {
+    height: 12rem;
+  }
+}
+
+.app__work-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+
+  div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+
+    margin: 1rem;
+    font-family: var(--font-base);
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    svg {
+      width: 50%;
+      height: 50%;
+      color: var(--white-color);
+    }
+  }
+}
+
+.work__heading{
+  color: var(--heading-color);
+  font-size: 3rem;
+  
+}
+
+.app__work-content {
+  
+  padding: 0.5rem;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+  
+  @media screen and (min-width: 768px) {
+    height: 12.5rem;   
+  }
+
+  h4 {
+    
+    line-height: 1.5;
+
+    @media screen and (min-width: 2000px) {
+      margin-top: 3rem;
+    }
+  }
+
+  .game{
+    padding: 0.5rem;
+      width: 100%;
+      position: relative;    
+      display: flex;
+      height: 400px;
+      justify-content: flex-start;
+  }
+
+  .app__work-tag {
+    
+    &:hover{
+      transform: scale(1.05); 
+    }
+  }
+}
+
+
+.tools{
+  color: var(--heading-color);
+  font-weight: 500;
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0 2rem;
+  font-size: 0.8rem;
+  text-align: center;
+
+  @media screen and (min-width: 768px){
+    font-size: 1rem;
+  }
+}
+
+.app__tool{
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.title{
+  color: rgb(37, 9, 9);
+  font-size: 1.2rem;  
+}
+
+.game-title{
+  margin: 0.8rem 0;
+}
+
+.project__card{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+
+  @media screen and (min-width: 766px) {
+    flex-direction: row;
+    max-width: 1500px;
+    margin: 0 auto 0 auto;
+  }
+}
+
+.skillPart__heading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillPart__heading > h4{
+  
+  font-size: 4rem;
+  margin: 1.2rem 0;
+  font-weight: 400;
+  
+  @media screen and (min-width: 766px) {
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
+  }
+}
+
+.skillPart__container{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.skillPart__subheading{
+  font-weight: 800;
+  font-family: 'Righteous', cursive;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  text-align: center;
+  color: rgb(51, 4, 105);  
+
+  @media screen and (min-width: 766px) {
+    font-size: 2rem;
+  }
+}
+
+.mobile__button{
+  display: flex;
+  width: 100%;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.btn__demo{
+   
+  a:visited{
+    text-decoration: none;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 1.2rem;
+
+  &:visited{
+    text-decoration: none;
+  }
+
+  &:active{
+    color: var(--secondary-color);
+  }
+}
+
+.btn__repo {
+  
+  a{
+    text-decoration: none;
+    color: rgb(226, 65, 7);
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  a:visited {
+      text-decoration: none;
+    }
+  
+  &:active {
+    color: rgb(226, 65, 7);
+  }
+
+  }
+  
+  a {
+   
+    &:visited {
+      text-decoration: none;
+    }
+}
+
+
+.btn__demo{  
+  margin-left: 1rem;
+}
+
+.btn__repo{  
+  margin-right: 1rem;
+}
