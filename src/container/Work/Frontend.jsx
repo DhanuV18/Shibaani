@@ -216,10 +216,7 @@ const scaleVariants = {
               </div>
             </div>
           </div>
-          </motion.div> 
-       
-
-        
+          </motion.div>        
         
     </div>   
 </div>
