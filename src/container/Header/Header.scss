@@ -268,9 +268,10 @@
 }
 
 .profile__picture {
-  width: 50vh;
-  height: 50%;
+  width: 20vh;
+  height: auto;
   border-radius: 100%;
+  margin-top: 6.5rem;
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 1.5rem;

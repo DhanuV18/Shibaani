@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import profile from '../../images/profile-shibaani.jpg'
+import profile from '../../images/profile-shibaani2.jpg'
 // import circle from '../../images/circle.svg'
 import react from '../../images/react.webp'
 import javascript from '../../images/javascript.webp'
